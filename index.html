@@ -19,7 +19,7 @@
     />
     <title>MS10 | English Excellence</title>
     <script type="module" crossorigin src="/MS10-project-english/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/MS10-project-english/assets/index-B7zmzNDS.css">
+    <link rel="stylesheet" crossorigin href="/MS10-project-english/assets/index-CZ2T11ud.css">
   </head>
   <body>
     <header class="header">
@@ -105,8 +105,70 @@
 
       <section class="our-teachers"></section>
 
-      <section class="leave-an-application"></section>
+      <section class="leave-an-application">
+  <div class="container">
+    <h2 class="leave-an-application__title">Leave an application</h2>
+    <p class="leave-an-application__description">Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.</p>
 
+    <div class="leave-an-application__content">
+      <div class="leave-an-application__image">
+        <img class="leave-an-application__image-img" src="/MS10-project-english/assets/leave-an-application-BK9KYOiI.png"
+          alt="Leave an application image">
+        <div class="leave-an-application__image-description">
+          <p class="leave-an-application__image-number">1000</p>
+          <p class="leave-an-application__image-text">of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable
+            moments, and
+            we are happy to share this joyful event with you.</p>
+        </div>
+      </div>
+      <!-- off submit -->
+      <form class="leave-an-application__gap-16 leave-an-application__form " onsubmit="return false;">
+        <div class="leave-an-application__gap-16">
+          <input class="leave-an-application__input" type="text" id="name" name="name" placeholder="Name" required
+            pattern="[a-zA-Zа-яА-ЯіІєЄґҐ\s'-]{2,}">
+          <input class="leave-an-application__input" type="email" id="email" name="email" placeholder="Email" required>
+          <input class="leave-an-application__input" type="tel" id="phone" name="phone" placeholder="Phone" required
+            pattern="[0-9\s\+\-\(\)]{10,}">
+          <textarea class="leave-an-application__input leave-an-application__textarea" id="message" name="comment"
+            placeholder="Comment"></textarea>
+        </div>
+        <div class="leave-an-application__gap-16">
+          <p class="leave-an-application__teachers">Choose a teacher</p>
+          <div class="leave-an-application__teachers-box">
+
+
+            <label for="Maria">
+              <input class="leave-an-application__radio" type="radio" id="Maria" name="teacher" value="Maria">
+              Maria
+            </label>
+            <label for="Artem">
+              <input class="leave-an-application__radio" type="radio" id="Artem" name="teacher" value="Artem">
+              Artem
+            </label>
+            <label for="Ilona">
+              <input class="leave-an-application__radio" type="radio" id="Ilona" name="teacher" value="Ilona">
+              Ilona
+            </label>
+            <label for="Volodymyr">
+              <input class="leave-an-application__radio" type="radio" id="Volodymyr" name="teacher" value="Volodymyr">
+              Volodymyr
+            </label>
+          </div>
+        </div>
+        <div class="leave-an-application__gap-16">
+          <button type="submit" class="leave-an-application__button">Send</button>
+          <p class="leave-an-application__policy">By clicking on “Send” button, you agree to our Privacy Policy, and
+            allow Promodo to use this information
+            for
+            marketing
+            purposes.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
       <section class="reviews"></section>
 
     </main>
