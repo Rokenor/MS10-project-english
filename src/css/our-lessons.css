@@ -1,2 +1,252 @@
-.our-lessons {
+
+/* ===== Base: mobile 320px - 375px ===== */
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lessons-section {
+    margin-bottom: 80px;
+}
+
+.lessons-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--title-text);
+    margin-bottom: 16px;
+}
+
+.lessons-title-accent {
+    position: relative;
+    display: inline-block;
+}
+
+.lessons-title-accent::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 12px;
+    background-color: #bee8cc;
+    border-radius: 8px;
+    z-index: -1;;
+}
+
+.lessons-subtitle {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 40px;
+}
+
+/* ===== List ===== */
+.lessons-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ===== Card ===== */
+.plan {
+    border-radius: 16px;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--title-text);
+    margin-bottom: 16px;
+}
+
+.plan-price {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--title-text);
+    margin-bottom: 40px;
+}
+
+.plan-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+/* variations */
+.plan-light {
+    border: 1px solid var(--green);
+}
+
+.plan-featured {
+    background-color: var(--green);
+}
+
+.plan-featured .plan-name,
+.plan-featured .plan-price {
+    color: var(--white);
+}
+
+.plan-featured .plan-desc {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== Buttons ===== */
+.btn {
+    height: 52px;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+}
+
+.btn-solid {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.btn-outline {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: var(--white);
+}
+
+
+/* ===== Tablet 768px ===== */
+@media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+      padding: 0 32px;
+    }
+
+    .lessons-section {
+        margin-bottom: 100px;
+    }
+
+    .lessons-title {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .lessons-title-accent::after {
+        height: 20px;
+        bottom: -3px;
+    }
+
+    .lessons-subtitle {
+        font-size: 18px;
+        margin-bottom: 64px;
+    }
+
+    /* ===== List ===== */
+    .lessons-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .lessons-item {
+        width: calc((100% - 32px) / 2);
+    }
+
+    /* ===== Card ===== */
+    .plan {
+        border-radius: 30px;
+        padding: 32px 16px;  
+    }
+
+    .plan-price {
+        line-height: 1.4;
+        margin-bottom: 32px;
+    }
+
+    .plan-desc {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+    }
+
+    /* ===== Buttons ===== */
+    .btn {
+        height: 60px;
+        padding: 16px 32px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+}
+
+/* ===== Desktop 1280px ===== */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding: 0 128px;
+    }
+    
+    .lessons-section {
+        margin-bottom: 150px;
+    }
+
+    .lessons-subtitle {
+        max-width: 665px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ===== List ===== */
+    .lessons-list {
+        flex-wrap: nowrap;
+        gap: 32px;
+    }
+
+    /* ===== Card ===== */
+    .plan {
+        padding: 32px 32px;  
+    }
+
+    .plan-price {
+        margin-bottom: 16px;
+    }
+
+    .btn-solid {
+        transition: background-color var(--transition-duration-and-func);
+    }
+
+    .btn-outline {
+        transition: background-color var(--transition-duration-and-func), 
+                    color var(--transition-duration-and-func);
+    }
+
+    .btn-solid:hover,
+    .btn-solid:focus {
+        background-color:  #38ae5f;
+    }
+
+    .btn-outline:hover,
+    .btn-outline:focus {
+        background-color: var(--white);
+        color: var(--green);
+    }
 }
