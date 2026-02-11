@@ -19,9 +19,11 @@
       <!-- off submit -->
       <form class="leave-an-application__gap-16 leave-an-application__form " onsubmit="return false;">
         <div class="leave-an-application__gap-16">
-          <input class="leave-an-application__input" type="text" id="name" name="name" placeholder="Name">
-          <input class="leave-an-application__input" type="email" id="email" name="email" placeholder="Email">
-          <input class="leave-an-application__input" type="tel" id="phone" name="phone" placeholder="Phone">
+          <input class="leave-an-application__input" type="text" id="name" name="name" placeholder="Name" required
+            pattern="[a-zA-Zа-яА-ЯіІєЄґҐ\s'-]{2,}">
+          <input class="leave-an-application__input" type="email" id="email" name="email" placeholder="Email" required>
+          <input class="leave-an-application__input" type="tel" id="phone" name="phone" placeholder="Phone" required
+            pattern="[0-9\s\+\-\(\)]{10,}">
           <textarea class="leave-an-application__input leave-an-application__textarea" id="message" name="comment"
             placeholder="Comment"></textarea>
         </div>
