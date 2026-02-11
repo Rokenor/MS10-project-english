@@ -1,2 +1,199 @@
 .leave-an-application {
+  padding: 40px 0;
+}
+.leave-an-application__title {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  margin-bottom: 14px;
+  color: #121417;
+}
+.leave-an-application__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #121417cc;
+}
+
+.leave-an-application__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.leave-an-application__image {
+  display: none;
+}
+
+.leave-an-application__gap-16 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.leave-an-application__form {
+  gap: 32px;
+}
+
+.leave-an-application__input {
+  height: 56px;
+  padding: 16px;
+  border: 1px solid #1214171a;
+  border-radius: 12px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.leave-an-application__input::placeholder {
+  color: #12141780;
+}
+
+.leave-an-application__input:focus {
+  outline: none;
+  border-color: #4dc274;
+}
+
+.leave-an-application__textarea {
+  height: 104px;
+  resize: none;
+}
+
+.leave-an-application__teachers {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #121417;
+}
+
+.leave-an-application__teachers-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #121417;
+}
+
+.leave-an-application__radio {
+  accent-color: #4dc274;
+}
+
+.leave-an-application__button {
+  color: #fff;
+  background-color: #4dc274;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  height: 52px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.leave-an-application__button:hover,
+.leave-an-application__button:focus {
+  background-color: #38ae5f;
+  cursor: pointer;
+}
+
+.leave-an-application__policy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+  color: #12141780;
+}
+@media only screen and (min-width: 768px) {
+  .leave-an-application {
+    padding: 50px 0;
+  }
+  .leave-an-application__title {
+    font-size: 40px;
+    line-height: 48px;
+
+    margin-bottom: 16px;
+  }
+  .leave-an-application__description {
+    font-size: 18px;
+    line-height: 30px;
+
+    max-width: 709px;
+    margin-bottom: 64px;
+  }
+  .leave-an-application__teachers-box {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .leave-an-application__button {
+    height: 60px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .leave-an-application {
+    padding: 75px 0;
+  }
+
+  .leave-an-application__content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .leave-an-application__image {
+    height: 578px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #4dc274;
+    display: grid;
+    align-content: space-between;
+  }
+
+  .leave-an-application__image-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .leave-an-application__image-description {
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+    color: #fff;
+  }
+  .leave-an-application__image-number {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 8px;
+  }
+  .leave-an-application__image-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+  }
 }
