@@ -92,6 +92,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 32px;
+    margin-bottom: 32px;
   }
 
   .about-us-item {
