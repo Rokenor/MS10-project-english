@@ -18,7 +18,6 @@
   padding-bottom: 20px;
 }
 
-/* logo */
 .header-logo {
   font-weight: 700;
   font-size: 20px;
@@ -86,7 +85,6 @@
 
   width: 240px;
 
-  /* критичное исправление высоты */
   height: 100%;
   height: 100vh;
   height: 100dvh;
@@ -299,5 +297,22 @@
     border-color: rgba(77 194 116 / 0.1);
     color: rgb(77, 194, 116);
     outline: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav-link {
+    position: relative;
+  }
+
+  .nav-link.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 37px;
+    height: 2px;
+    background-color: rgb(77, 194, 116);
+    border-radius: 2px;
   }
 }
