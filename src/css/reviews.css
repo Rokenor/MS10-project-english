@@ -66,6 +66,7 @@
     background-color: #f3f5f6;
     border-radius: 16px;
     padding: 20px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -174,6 +175,8 @@
     .review-text {
         font-size: 16px;
         line-height: 1.5;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }
 
@@ -227,8 +230,8 @@
             box-shadow var(--transition-duration-and-func);
     }
 
-    .review-card:hover {
+    /* .review-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-    }
+    } */
 }
