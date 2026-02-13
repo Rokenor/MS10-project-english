@@ -84,17 +84,14 @@
     margin-bottom: 16px;
 }
 
-.proposal-check-icon {
-        width: 20px;
-        height: 20px;
-    }
-
-.proposal-check-icon .icon-bg {
-    fill: var(--green);
+.proposal-check {
+    width: 20px;
+    height: 20px;
 }
 
-.proposal-check-icon .icon-mark {
-    stroke: var(--white);
+.proposal-check-icon {
+    width: 20px;
+    height: 20px;
 }
 
 .proposal-text {
@@ -125,11 +122,13 @@
 /* ===== Tablet 768px ===== */
 @media (min-width: 768px) {
     .proposal {
+        max-width: 768px;
         margin: 0 32px 100px 32px;
         border-radius: 30px;
     }
 
     .proposal-container {
+        max-width: 768px;
         padding: 64px 18px 93px 18px;
     }    
 
@@ -175,6 +174,11 @@
         gap: 16px;
     }
 
+    .proposal-check {
+        width: 28px;
+        height: 28px;
+    }
+
     .proposal-check-icon {
         width: 28px;
         height: 28px;
@@ -201,10 +205,12 @@
 /* ===== Desktop 1280px ===== */
 @media (min-width: 1280px) {
     .proposal {
+        max-width: 1280px;
         margin: 0 64px 150px 64px;
     }
     
     .proposal-container {
+        max-width: 1280px;
         padding: 64px 64px 142px 64px;
     }
 
