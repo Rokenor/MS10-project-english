@@ -1,2 +1,237 @@
-.reviews {
+/* ===== Reviews: mobile 320px - 375px ===== */
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.reviews-section {
+    margin-bottom: 80px;
+}
+
+.reviews-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--title-text);
+    margin-bottom: 16px;
+}
+
+.reviews-title-accent {
+    position: relative;
+    display: inline-block;
+}
+
+.reviews-title-accent::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 12px;
+    background-color: #bee8cc;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.reviews-subtitle {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 40px;
+}
+
+/* ===== List ===== */
+.reviews-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.reviews-item:nth-child(2),
+.reviews-item:nth-child(3) {
+    display: none;
+}
+
+/* ===== Card ===== */
+.review-card {
+    background-color: #f3f5f6;
+    border-radius: 16px;
+    padding: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    min-height: 278px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.review-card-header {
+    background-color: var(--green);
+    border-radius: 8px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* Запобігаємо стисненню шапки */
+    flex-shrink: 0;
+}
+
+.review-avatar {
+    border-radius: 50%;
+    /* border: 2px solid var(--white); */
+    object-fit: cover;
+}
+
+.review-student-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--white);
+    margin-bottom: 2px;
+}
+
+.review-student-role {
+    font-size: 12px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.review-text {
+    font-size: 14px;
+    line-height: 1.72;
+    color: rgba(18, 20, 23, 0.5);
+    /* Дозволяємо тексту займати весь вільний простір */
+    flex-grow: 1;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+/* ===== Tablet 768px ===== */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    .reviews-section {
+        margin-bottom: 100px;
+    }
+
+    .reviews-subtitle {
+        font-size: 18px;
+        line-height: 1.67;
+        margin-left: 28px;
+        margin-right: 28px;
+        margin-bottom: 64px;
+    }
+
+    /* Показуємо 2-гу картку */
+    .reviews-item:nth-child(2) {
+        /* Змінюємо block на flex для вирівнювання висоти */
+        display: flex;
+    }
+
+    .reviews-item:nth-child(3) {
+        display: none;
+    }
+
+    .reviews-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* Розтягуємо елементи в рядку по висоті найвищого */
+        align-items: stretch;
+        gap: 32px;
+    }
+
+    .reviews-item {
+        width: calc((100% - 32px) / 2);
+        /* width: 336px; */
+        display: flex;
+    }
+
+    .review-card {
+        border-radius: 30px;
+        padding: 32px 16px;
+        /* Висота за макетом для таблет */
+        min-height: 326px;
+    }
+
+    .review-card-header {
+        border-radius: 15px;
+        padding: 16px;
+    }
+
+    .review-text {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+/* ===== Desktop 1280px ===== */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding: 0 128px;
+    }
+
+    .reviews-section {
+        margin-bottom: 150px;
+    }
+
+    .reviews-subtitle {
+        /* font-size: 18px;
+    line-height: 1.67; */
+        max-width: 647px;
+        margin-left: 188px;
+        margin-right: 188px;
+    }
+
+    /* Показуємо всі картки та робимо їх флекс-контейнерами */
+    .reviews-item:nth-child(2),
+    .reviews-item:nth-child(3) {
+        display: flex;
+    }
+
+    /* Додаємо flex для першої картки, яка була видима раніше */
+    .reviews-item:nth-child(1) {
+        display: flex;
+    }
+
+    .reviews-list {
+        flex-wrap: nowrap;
+        align-items: stretch;
+        gap: 32px;
+    }
+
+    .reviews-item {
+        width: calc((100% - 64px) / 3);
+        display: flex;
+    }
+
+    .review-card {
+        /* Висота за макетом для десктоп */
+        min-height: 326px;
+        padding: 32px;
+        transition:
+            transform var(--transition-duration-and-func),
+            box-shadow var(--transition-duration-and-func);
+    }
+
+    /* .review-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    } */
 }
