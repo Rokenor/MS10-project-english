@@ -20,3 +20,13 @@
   openBtn.addEventListener('click', openMenu);
   closeBtn.addEventListener('click', closeMenu);
 })();
+
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(l => l.classList.remove('current'));
+
+    link.classList.add('current');
+  });
+});
