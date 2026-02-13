@@ -83,17 +83,14 @@
   margin-bottom: 16px;
 }
 
+.proposal-check {
+    width: 20px;
+    height: 20px;
+}
+
 .proposal-check-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.proposal-check-icon .icon-bg {
-  fill: var(--green);
-}
-
-.proposal-check-icon .icon-mark {
-  stroke: var(--white);
+    width: 20px;
+    height: 20px;
 }
 
 .proposal-text {
@@ -123,115 +120,124 @@
 
 /* ===== Tablet 768px ===== */
 @media (min-width: 768px) {
-  .proposal {
-    margin: 0 32px 100px 32px;
-    border-radius: 30px;
-  }
+    .proposal {
+        max-width: 768px;
+        margin: 0 32px 100px 32px;
+        border-radius: 30px;
+    }
 
-  .proposal-container {
-    padding: 64px 18px 93px 18px;
-  }
+    .proposal-container {
+        max-width: 768px;
+        padding: 64px 18px 93px 18px;
+    }    
 
-  .proposal-headline {
-    font-size: 60px;
-    line-height: 1.2;
-    margin-bottom: 83px;
-  }
+    .proposal-headline {
+        font-size: 60px;
+        line-height: 1.2;
+        margin-bottom: 83px;
+    }
 
-  .proposal-wrap::before {
-    transform: translate(-50%, -50%) rotate(10deg);
-    border-radius: 30px;
-  }
+    .proposal-wrap::before {
+        transform: translate(-50%, -50%) rotate(10deg);
+        border-radius: 30px;
+    }
 
-  .proposal-wrap::after {
-    transform: translate(-50%, -50%) rotate(-11deg);
-    border-radius: 30px;
-  }
+    .proposal-wrap::after {
+        transform: translate(-50%, -50%) rotate(-11deg);
+        border-radius: 30px;
+    }
 
-  .proposal-card {
-    border-radius: 30px;
-    padding: 65px 32px 63px 32px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 20px;
-  }
+    .proposal-card {
+        border-radius: 30px;
+        padding: 65px 32px 63px 32px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 20px;
+    }
 
-  .proposal-card-content {
-    min-width: 448px;
-  }
+    .proposal-card-content {
+        min-width: 448px;
+    }
 
-  .proposal-title {
-    font-size: 40px;
-    margin-bottom: 32px;
-  }
+    .proposal-title {
+        font-size: 40px;
+        margin-bottom: 32px;
+    }
 
-  .proposal-list {
-    margin-bottom: 32px;
-  }
+    .proposal-list {
+        margin-bottom: 32px;
+    }
 
-  .proposal-item {
-    gap: 16px;
-  }
+    .proposal-item {
+        gap: 16px;
+    }
 
-  .proposal-check-icon {
-    width: 28px;
-    height: 28px;
-  }
+    .proposal-check {
+        width: 28px;
+        height: 28px;
+    }
 
-  .proposal-text {
-    font-size: 20px;
-    line-height: 1.2;
-  }
+    .proposal-check-icon {
+        width: 28px;
+        height: 28px;
+    }
 
-  .proposal-btn {
-    font-size: 18px;
-    line-height: 1.6;
-    width: fit-content;
-    padding: 16px 64px;
-    display: flex;
-  }
+    .proposal-text {
+        font-size: 20px;
+        line-height: 1.2;
+    }
 
-  /* show image on tablet/desktop */
-  .proposal-media {
-    display: contents;
-  }
-}
+    .proposal-btn {
+        font-size: 18px;
+        line-height: 1.6;
+        width: fit-content;
+        padding: 16px 64px;
+        display: flex;
+    }
+
+    /* show image on tablet/desktop */
+    .proposal-media {
+        display: contents;
+    }
+}    
 /* ===== Desktop 1280px ===== */
 @media (min-width: 1280px) {
-  .proposal {
-    max-width: 1152px;
-    margin: 0 auto 150px;
-  }
+    .proposal {
+        max-width: 1280px;
+        margin: 0 64px 150px 64px;
+    }
+    
+    .proposal-container {
+        max-width: 1280px;
+        padding: 64px 64px 142px 64px;
+    }
 
-  .proposal-container {
-    padding: 64px 64px 142px 64px;
-  }
+    .proposal-headline {
+        margin-bottom: 133px;
+        max-width: 776px;
+    }
 
-  .proposal-headline {
-    margin-bottom: 133px;
-    max-width: 776px;
-  }
+    .proposal-card {
+        padding: 64px 64px;
+        gap: 92px;
+    }
 
-  .proposal-card {
-    padding: 64px 64px;
-    gap: 92px;
-  }
+    .proposal-title {
+        margin-bottom: 40px;
+    }
 
-  .proposal-title {
-    margin-bottom: 40px;
-  }
+    .proposal-list {
+        margin-bottom: 40px;
+    }
 
-  .proposal-list {
-    margin-bottom: 40px;
-  }
+    .proposal-btn {
+        transition: background-color var(--transition-duration-and-func);
+    }
 
-  .proposal-btn {
-    transition: background-color var(--transition-duration-and-func);
-  }
+    .proposal-btn:hover,
+    .proposal-btn:focus {
+        background-color: #38ae5f;
+    }
 
-  .proposal-btn:hover,
-  .proposal-btn:focus {
-    background-color: #38ae5f;
-  }
 }
