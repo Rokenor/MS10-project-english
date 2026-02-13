@@ -300,13 +300,20 @@
     fill: currentColor;
   }
 
-  .social-list-link-header:hover,
-  .social-list-link-header:focus {
+  .social-list-link-header:hover {
     border-color: rgba(77 194 116 / 0.1);
     color: rgb(77, 194, 116);
-    outline: none;
   }
 }
+
+  /* only for keyboards */
+.social-list-link-header:focus-visible {
+  border-color: rgba(77 194 116 / 0.3);
+  color: rgb(77, 194, 116);
+  outline: 2px solid rgba(77 194 116 / 0.35);
+  outline-offset: 2px;
+}
+
 
 @media screen and (min-width: 1280px) {
   .nav-link {
