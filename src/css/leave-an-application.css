@@ -96,7 +96,42 @@
 }
 
 .leave-an-application__radio {
-  accent-color: #4dc274;
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+  left: -9999px;
+}
+
+.leave-an-application__radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.leave-an-application__radio-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+.leave-an-application__radio-icon--checked {
+  display: none;
+}
+
+.leave-an-application__radio:checked
+  + .leave-an-application__radio-icon--unchecked
+  + .leave-an-application__radio-icon--checked {
+  display: block;
+}
+
+.leave-an-application__radio:checked
+  + .leave-an-application__radio-icon--unchecked {
+  display: none;
 }
 
 .leave-an-application__button {
