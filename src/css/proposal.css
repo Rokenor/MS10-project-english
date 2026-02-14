@@ -276,7 +276,7 @@
     height: 462px;
     transform: translate(-50%, -50%) rotate(-8deg);
     border-radius: 30px;
-    background: var(--light-green)
+    background: var(--light-green);
 
   }
 
