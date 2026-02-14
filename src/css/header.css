@@ -18,12 +18,13 @@
 
 .header {
   padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 @media (min-width: 768px) {
-.header {
-  padding-top: 20px;
-}
+  .header {
+    padding-top: 20px;
+  }
 }
 
 .header-logo {
@@ -306,14 +307,13 @@
   }
 }
 
-  /* only for keyboards */
+/* only for keyboards */
 .social-list-link-header:focus-visible {
   border-color: rgba(77 194 116 / 0.3);
   color: rgb(77, 194, 116);
   outline: 2px solid rgba(77 194 116 / 0.35);
   outline-offset: 2px;
 }
-
 
 @media screen and (min-width: 1280px) {
   .nav-link {
