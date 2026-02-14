@@ -3,12 +3,12 @@
 }
 .leave-an-application__title {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 1.333;
   margin-bottom: 16px;
   font-weight: 700;
   font-style: Bold;
   font-size: 32px;
-  line-height: 36px;
+  line-height: 1.125;
   letter-spacing: -0.02em;
   text-align: center;
 
@@ -19,7 +19,7 @@
 .leave-an-application__description {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
   letter-spacing: 0%;
   text-align: center;
 
@@ -57,7 +57,7 @@
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0%;
 }
 
@@ -78,7 +78,7 @@
 .leave-an-application__teachers {
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   color: #121417;
 }
@@ -90,7 +90,7 @@
 
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.333;
   letter-spacing: -0.02em;
   color: #121417;
 }
@@ -143,7 +143,7 @@
   height: 52px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
 }
 
 .leave-an-application__button:hover,
@@ -154,16 +154,16 @@
 
 .leave-an-application__policy {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.333;
   letter-spacing: 0%;
   vertical-align: middle;
 
-  color: #12141780;
+  color: rgba(18, 20, 23, 0.5);
 }
 
 .leave-an-application__policy-link {
-  color: #12141780;
+  color: rgba(18, 20, 23, 0.5);
   text-decoration: underline;
 }
 
@@ -173,13 +173,13 @@
   }
   .leave-an-application__title {
     font-size: 40px;
-    line-height: 48px;
+    line-height: 1.2;
 
     margin-bottom: 16px;
   }
   .leave-an-application__description {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 1.667;
 
     max-width: 709px;
     margin-bottom: 64px;
@@ -191,7 +191,11 @@
   .leave-an-application__button {
     height: 60px;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.556;
+  }
+  .leave-an-application__policy {
+    font-size: 14px;
+    line-height: 1.714;
   }
 }
 
@@ -227,7 +231,7 @@
   .leave-an-application__image-number {
     font-weight: 700;
     font-size: 40px;
-    line-height: 48px;
+    line-height: 1.2;
     letter-spacing: -0.02em;
 
     margin-bottom: 8px;
@@ -235,8 +239,14 @@
   .leave-an-application__image-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0%;
     color: #ffffffb2;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .leave-an-application__form {
+    padding: 0 102px;
   }
 }
