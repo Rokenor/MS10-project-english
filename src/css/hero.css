@@ -1,2 +1,128 @@
-.hero {
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  margin: 8px auto 0;
+  min-height: 709px;
+  max-width: 335px;
+  background-image: url('../img/hero/hero-mobile.png');
+  background-image: image-set(
+    url('../img/hero/hero-mobile.png') 1x,
+    url('../img/hero/hero-mobile@2x.png') 2x
+  );
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 105%;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.hero-title-accent {
+  color: #bee8cc;
+}
+
+.hero-button {
+  display: block;
+  border-radius: 12px;
+  padding: 14px 24px;
+  margin-bottom: 72px;
+  max-width: 295px;
+  height: 52px;
+
+  background: var(--green);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--white);
+  text-align: center;
+}
+
+.hero-link {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  background-color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    justify-content: flex-start;
+    align-items: start;
+    min-height: 857px;
+    max-width: 704px;
+    background-image: url('../img/hero/hero-tablet.png');
+    background-image: image-set(
+      url('../img/hero/hero-tablet.png') 1x,
+      url('../img/hero/hero-tablet@2x.png') 2x
+    );
+  }
+
+  .hero-container.container {
+    padding: 260px 32px;
+    width: 100%;
+  }
+
+  .hero-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 117%;
+    color: var(--white);
+    margin-bottom: 32px;
+    max-width: 488px;
+  }
+
+  .hero-button {
+    padding: 16px 64px;
+    margin-bottom: auto;
+    max-width: 306px;
+    height: 60px;
+
+    font-size: 18px;
+    line-height: 156%;
+  }
+
+  .hero-link {
+    right: 32px;
+    bottom: 32px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-section {
+    max-width: 1152px;
+    min-height: 629px;
+    background-image: url('../img/hero/hero-desktop.png');
+    background-image: image-set(
+      url('../img/hero/hero-desktop.png') 1x,
+      url('../img/hero/hero-desktop@2x.png') 2x
+    );
+  }
+
+  .hero-container.container {
+    padding: 164px 64px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .hero-title {
+    margin-bottom: 32px;
+    max-width: 545px;
+  }
 }

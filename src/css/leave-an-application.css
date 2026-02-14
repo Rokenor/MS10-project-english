@@ -3,29 +3,30 @@
 }
 .leave-an-application__title {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 1.333;
   margin-bottom: 16px;
   font-weight: 700;
   font-style: Bold;
   font-size: 32px;
-  line-height: 36px;
-  letter-spacing: 0.02em;
+  line-height: 1.125;
+  letter-spacing: -0.02em;
   text-align: center;
 
   margin-bottom: 14px;
   color: #121417;
 }
+
 .leave-an-application__description {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
   letter-spacing: 0%;
   text-align: center;
 
   width: 100%;
   margin: 0 auto;
   margin-bottom: 20px;
-  color: #121417cc;
+  color: #12141780;
 }
 
 .leave-an-application__content {
@@ -56,7 +57,7 @@
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0%;
 }
 
@@ -77,8 +78,8 @@
 .leave-an-application__teachers {
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   color: #121417;
 }
 
@@ -89,13 +90,48 @@
 
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
+  line-height: 1.333;
+  letter-spacing: -0.02em;
   color: #121417;
 }
 
 .leave-an-application__radio {
-  accent-color: #4dc274;
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+  left: -9999px;
+}
+
+.leave-an-application__radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.leave-an-application__radio-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+.leave-an-application__radio-icon--checked {
+  display: none;
+}
+
+.leave-an-application__radio:checked
+  + .leave-an-application__radio-icon--unchecked
+  + .leave-an-application__radio-icon--checked {
+  display: block;
+}
+
+.leave-an-application__radio:checked
+  + .leave-an-application__radio-icon--unchecked {
+  display: none;
 }
 
 .leave-an-application__button {
@@ -107,7 +143,7 @@
   height: 52px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
 }
 
 .leave-an-application__button:hover,
@@ -118,26 +154,32 @@
 
 .leave-an-application__policy {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.333;
   letter-spacing: 0%;
   vertical-align: middle;
 
-  color: #12141780;
+  color: rgba(18, 20, 23, 0.5);
 }
+
+.leave-an-application__policy-link {
+  color: rgba(18, 20, 23, 0.5);
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 768px) {
   .leave-an-application {
     padding: 50px 0;
   }
   .leave-an-application__title {
     font-size: 40px;
-    line-height: 48px;
+    line-height: 1.2;
 
     margin-bottom: 16px;
   }
   .leave-an-application__description {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 1.667;
 
     max-width: 709px;
     margin-bottom: 64px;
@@ -149,7 +191,11 @@
   .leave-an-application__button {
     height: 60px;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.556;
+  }
+  .leave-an-application__policy {
+    font-size: 14px;
+    line-height: 1.714;
   }
 }
 
@@ -185,15 +231,22 @@
   .leave-an-application__image-number {
     font-weight: 700;
     font-size: 40px;
-    line-height: 48px;
-    letter-spacing: 0.02em;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
 
     margin-bottom: 8px;
   }
   .leave-an-application__image-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0%;
+    color: #ffffffb2;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .leave-an-application__form {
+    padding: 0 102px;
   }
 }
