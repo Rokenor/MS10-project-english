@@ -227,8 +227,7 @@
 
   .review-card {
     /* Висота за макетом для десктоп */
-    min-height: 326px;
-    padding: 32px;
+    min-height: 326px;    
     transition:
       transform var(--transition-duration-and-func),
       box-shadow var(--transition-duration-and-func);
