@@ -20,7 +20,6 @@
   line-height: 1.05;
   color: var(--white);
   margin-bottom: 66px;
-  max-width: 550px;
 }
 
 .proposal-headline--muted {
@@ -142,11 +141,15 @@
   }
 
   .proposal-wrap::before {
+    top: 52%;
+    left: 51%;
     transform: translate(-50%, -50%) rotate(10deg);
     border-radius: 30px;
   }
 
   .proposal-wrap::after {
+    top: 50%;
+    left: 49%;
     transform: translate(-50%, -50%) rotate(-11deg);
     border-radius: 30px;
   }
