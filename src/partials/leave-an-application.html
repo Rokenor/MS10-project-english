@@ -1,72 +1,157 @@
 <section class="leave-an-application" id="application">
   <div class="container">
-    <h2 class="leave-an-application__title">Leave an <span class="lessons-title-accent">application</span></h2>
-    <p class="leave-an-application__description">Please use the form below to contact us. Enter your name, email, and
-      message and we'll get back to you shortly.</p>
+    <h2 class="leave-an-application__title">
+      Leave an <span class="lessons-title-accent">application</span>
+    </h2>
+    <p class="leave-an-application__description">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
 
     <div class="leave-an-application__content">
       <div class="leave-an-application__image">
-        <img class="leave-an-application__image-img"
-          srcset="./img/leave-an-application.png 1x, ./img/leave-an-application@2x.png 2x"
-          src="./img/leave-an-application.png" alt="Leave an application image">
+        <picture>
+          <source
+            srcset="
+              ./img/leave-an-application/leave-an-application.webp    1x,
+              ./img/leave-an-application/leave-an-application@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="leave-an-application__image-img"
+            srcset="./img/leave-an-application/leave-an-application@2.png 2x"
+            src="./img/leave-an-application/leave-an-application.png"
+            alt="Leave an application image"
+          />
+        </picture>
         <div class="leave-an-application__image-description">
           <p class="leave-an-application__image-number">1000</p>
-          <p class="leave-an-application__image-text">of our online English language lessons! This journey has been full
-            of discovery, growth and unforgettable
-            moments, and
-            we are happy to share this joyful event with you.</p>
+          <p class="leave-an-application__image-text">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
         </div>
       </div>
       <!-- off submit -->
-      <form class="leave-an-application__gap-16 leave-an-application__form " onsubmit="return false;">
+      <form
+        class="leave-an-application__gap-16 leave-an-application__form"
+        onsubmit="return false;"
+      >
         <div class="leave-an-application__gap-16">
-          <input class="leave-an-application__input" type="text" id="name" name="name" placeholder="Name" required
-            pattern="[a-zA-Zа-яА-ЯіІєЄґҐ\s'-]{2,}">
-          <input class="leave-an-application__input" type="email" id="email" name="email" placeholder="Email" required>
-          <input class="leave-an-application__input" type="tel" id="phone" name="phone" placeholder="Phone" required
-            pattern="[0-9\s\+\-\(\)]{10,}">
-          <textarea class="leave-an-application__input leave-an-application__textarea" id="message" name="comment"
-            placeholder="Comment"></textarea>
+          <input
+            class="leave-an-application__input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+            pattern="[a-zA-Zа-яА-ЯіІєЄґҐ\s'-]{2,}"
+          />
+          <input
+            class="leave-an-application__input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            class="leave-an-application__input"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone"
+            required
+            pattern="[0-9\s\+\-\(\)]{10,}"
+          />
+          <textarea
+            class="leave-an-application__input leave-an-application__textarea"
+            id="message"
+            name="comment"
+            placeholder="Comment"
+          ></textarea>
         </div>
         <div class="leave-an-application__gap-16">
           <p class="leave-an-application__teachers">Choose a teacher</p>
           <div class="leave-an-application__teachers-box">
             <label for="Maria" class="leave-an-application__radio-label">
-              <input class="leave-an-application__radio" type="radio" id="Maria" name="teacher" value="Maria">
-              <svg class="leave-an-application__radio-icon leave-an-application__radio-icon--unchecked">
+              <input
+                class="leave-an-application__radio"
+                type="radio"
+                id="Maria"
+                name="teacher"
+                value="Maria"
+              />
+              <svg
+                class="leave-an-application__radio-icon leave-an-application__radio-icon--unchecked"
+              >
                 <use href="./img/sprite.svg#icon-radio_off"></use>
               </svg>
-              <svg class="leave-an-application__radio-icon leave-an-application__radio-icon--checked">
+              <svg
+                class="leave-an-application__radio-icon leave-an-application__radio-icon--checked"
+              >
                 <use href="./img/sprite.svg#icon-radio_on"></use>
               </svg>
               Maria
             </label>
             <label for="Artem" class="leave-an-application__radio-label">
-              <input class="leave-an-application__radio" type="radio" id="Artem" name="teacher" value="Artem">
-              <svg class="leave-an-application__radio-icon leave-an-application__radio-icon--unchecked">
+              <input
+                class="leave-an-application__radio"
+                type="radio"
+                id="Artem"
+                name="teacher"
+                value="Artem"
+              />
+              <svg
+                class="leave-an-application__radio-icon leave-an-application__radio-icon--unchecked"
+              >
                 <use href="./img/sprite.svg#icon-radio_off"></use>
               </svg>
-              <svg class="leave-an-application__radio-icon leave-an-application__radio-icon--checked">
+              <svg
+                class="leave-an-application__radio-icon leave-an-application__radio-icon--checked"
+              >
                 <use href="./img/sprite.svg#icon-radio_on"></use>
               </svg>
               Artem
             </label>
             <label for="Ilona" class="leave-an-application__radio-label">
-              <input class="leave-an-application__radio" type="radio" id="Ilona" name="teacher" value="Ilona">
-              <svg class="leave-an-application__radio-icon leave-an-application__radio-icon--unchecked">
+              <input
+                class="leave-an-application__radio"
+                type="radio"
+                id="Ilona"
+                name="teacher"
+                value="Ilona"
+              />
+              <svg
+                class="leave-an-application__radio-icon leave-an-application__radio-icon--unchecked"
+              >
                 <use href="./img/sprite.svg#icon-radio_off"></use>
               </svg>
-              <svg class="leave-an-application__radio-icon leave-an-application__radio-icon--checked">
+              <svg
+                class="leave-an-application__radio-icon leave-an-application__radio-icon--checked"
+              >
                 <use href="./img/sprite.svg#icon-radio_on"></use>
               </svg>
               Ilona
             </label>
             <label for="Volodymyr" class="leave-an-application__radio-label">
-              <input class="leave-an-application__radio" type="radio" id="Volodymyr" name="teacher" value="Volodymyr">
-              <svg class="leave-an-application__radio-icon leave-an-application__radio-icon--unchecked">
+              <input
+                class="leave-an-application__radio"
+                type="radio"
+                id="Volodymyr"
+                name="teacher"
+                value="Volodymyr"
+              />
+              <svg
+                class="leave-an-application__radio-icon leave-an-application__radio-icon--unchecked"
+              >
                 <use href="./img/sprite.svg#icon-radio_off"></use>
               </svg>
-              <svg class="leave-an-application__radio-icon leave-an-application__radio-icon--checked">
+              <svg
+                class="leave-an-application__radio-icon leave-an-application__radio-icon--checked"
+              >
                 <use href="./img/sprite.svg#icon-radio_on"></use>
               </svg>
               Volodymyr
@@ -74,13 +159,15 @@
           </div>
         </div>
         <div class="leave-an-application__gap-16">
-          <button type="submit" class="leave-an-application__button">Send</button>
-          <p class="leave-an-application__policy">By clicking on “Send” button, you agree to our <a href="#"
-              class="leave-an-application__policy-link">Privacy Policy</a>, and
-            allow Promodo to use this information
-            for
-            marketing
-            purposes.</p>
+          <button type="submit" class="leave-an-application__button">
+            Send
+          </button>
+          <p class="leave-an-application__policy">
+            By clicking on “Send” button, you agree to our
+            <a href="#" class="leave-an-application__policy-link"
+              >Privacy Policy</a
+            >, and allow Promodo to use this information for marketing purposes.
+          </p>
         </div>
       </form>
     </div>
