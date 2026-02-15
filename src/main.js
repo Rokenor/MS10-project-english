@@ -2,6 +2,8 @@
   const openBtn = document.querySelector('[data-menu-open]');
   const closeBtn = document.querySelector('[data-menu-close]');
   const menu = document.querySelector('[data-menu]');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+  const navLinks = document.querySelectorAll('.nav-link');
 
   if (!openBtn || !closeBtn || !menu) return;
 
@@ -19,14 +21,15 @@
 
   openBtn.addEventListener('click', openMenu);
   closeBtn.addEventListener('click', closeMenu);
-})();
 
-const navLinks = document.querySelectorAll('.nav-link');
-
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.forEach(l => l.classList.remove('current'));
-
-    link.classList.add('current');
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
   });
-});
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.forEach(l => l.classList.remove('current'));
+      link.classList.add('current');
+    });
+  });
+})();
