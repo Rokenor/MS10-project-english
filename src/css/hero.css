@@ -139,6 +139,10 @@
     background-color: #38ae5f;
   }
 
+  .hero-link {
+    transition: background-color var(--transition-duration-and-func);
+  }
+
   .hero-link:hover,
   .hero-link:focus {
     background-color: var(--light-green);
