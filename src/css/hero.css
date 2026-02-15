@@ -125,4 +125,13 @@
     margin-bottom: 32px;
     max-width: 545px;
   }
+
+  .hero-button {
+    transition: background-color var(--transition-duration-and-func);
+  }
+
+  .hero-button:hover,
+  .hero-button:focus {
+    background-color: #38ae5f;
+  }
 }
