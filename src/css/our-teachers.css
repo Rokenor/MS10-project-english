@@ -6,7 +6,7 @@
 }
 
 .our-teachers-section {
-  margin-bottom: 80px;
+  padding: 80px 0 40px;
 }
 
 .teachers-title {
@@ -88,7 +88,7 @@
   }
 
   .our-teachers-section {
-    margin-bottom: 100px;
+    padding: 100px 0 50px;
   }
 
   .teachers-title {
@@ -131,7 +131,7 @@
     padding: 0 128px;
   }
   .our-teachers-section {
-    margin-bottom: 150px;
+    padding: 150px 0 75px;
   }
 
   .teachers-supporting-text {

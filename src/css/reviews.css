@@ -7,7 +7,7 @@
 }
 
 .reviews-section {
-  margin-bottom: 80px;
+  padding: 40px 0 80px;
 }
 
 .reviews-title {
@@ -125,7 +125,7 @@
   }
 
   .reviews-section {
-    margin-bottom: 100px;
+    padding: 50px 0 100px;
   }
 
   .reviews-subtitle {
@@ -192,7 +192,7 @@
   }
 
   .reviews-section {
-    margin-bottom: 150px;
+    padding: 75px 0 150px;
   }
 
   .reviews-subtitle {
@@ -227,7 +227,7 @@
 
   .review-card {
     /* Висота за макетом для десктоп */
-    min-height: 326px;    
+    min-height: 326px;
     transition:
       transform var(--transition-duration-and-func),
       box-shadow var(--transition-duration-and-func);

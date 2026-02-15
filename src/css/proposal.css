@@ -4,7 +4,7 @@
   background: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
   overflow: hidden;
   max-width: 667px;
-  margin: 0 20px 80px 20px;
+  margin: 0 20px;
 }
 
 .proposal-container {
@@ -124,7 +124,7 @@
 @media (min-width: 768px) {
   .proposal {
     max-width: 768px;
-    margin: 0 32px 100px 32px;
+    margin: 0 32px;
     border-radius: 30px;
     overflow: visible;
   }
@@ -220,7 +220,7 @@
 @media (min-width: 1280px) {
   .proposal {
     max-width: 1152px;
-    margin: 0 auto 150px;
+    margin: 0 auto;
   }
 
   .proposal-container {
@@ -258,7 +258,7 @@
   }
 
   .proposal-wrap::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 51%;
     left: 50%;
@@ -271,7 +271,7 @@
   }
 
   .proposal-wrap::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 50%;
     left: 49%;
@@ -280,7 +280,6 @@
     transform: translate(-50%, -50%) rotate(-8deg);
     border-radius: 30px;
     background: var(--light-green);
-
   }
 
   .proposal-title {
