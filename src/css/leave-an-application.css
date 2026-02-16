@@ -6,7 +6,6 @@
   line-height: 1.333;
   margin-bottom: 16px;
   font-weight: 700;
-  font-style: Bold;
   font-size: 32px;
   line-height: 1.125;
   letter-spacing: -0.02em;
@@ -20,7 +19,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
-  letter-spacing: 0%;
   text-align: center;
 
   width: 100%;
@@ -58,7 +56,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0%;
 }
 
 .leave-an-application__input::placeholder {
@@ -156,7 +153,6 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.333;
-  letter-spacing: 0%;
   vertical-align: middle;
 
   color: rgba(18, 20, 23, 0.5);
@@ -240,7 +236,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0%;
     color: #ffffffb2;
   }
 }
