@@ -51,7 +51,6 @@
 .teachers-list-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .teachers-photo {
@@ -116,7 +115,6 @@
 
   .teachers-list-item {
     width: calc((100% - 32px) / 2);
-    margin-bottom: 32px;
   }
 
   .teachers-description {
