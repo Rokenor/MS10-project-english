@@ -93,6 +93,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // Pick active section based on scroll position
   const header = document.querySelector('.header');
   const headerOffset = header ? header.offsetHeight : 0;
+  
+  function handleHeaderScroll() {
+    if (!header) return;
+
+    if (window.scrollY > 10) {
+      header.classList.add('is-scrolled');
+    } else {
+      header.classList.remove('is-scrolled');
+    }
+  }
 
   function onScroll() {
     if (lockedId) {
@@ -133,6 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
     setActive(currentId);
   }
 
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-});
+  window.addEventListener('scroll', () => {
+    onScroll();
+    handleHeaderScroll();
+  }, { passive: true });
+  
+  });

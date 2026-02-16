@@ -29,6 +29,10 @@
     background: white;
     z-index: 10000;
   }
+
+  .header.is-scrolled {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+  }
 }
 
 .header-logo {
