@@ -24,7 +24,7 @@
   width: 100%;
   margin: 0 auto;
   margin-bottom: 20px;
-  color: #12141780;
+  color: rgba(18, 20, 23, 0.5);
 }
 
 .leave-an-application__content {
@@ -50,7 +50,7 @@
 .leave-an-application__input {
   height: 56px;
   padding: 16px;
-  border: 1px solid #1214171a;
+  border: 1px solid rgba(18, 20, 23, 0.1);
   border-radius: 12px;
 
   font-weight: 400;
@@ -59,7 +59,7 @@
 }
 
 .leave-an-application__input::placeholder {
-  color: #12141780;
+  color: #121417;
 }
 
 .leave-an-application__input:focus {
@@ -222,21 +222,20 @@
   .leave-an-application__image-description {
     text-align: center;
     padding: 20px 20px 40px 20px;
-    color: #fff;
   }
   .leave-an-application__image-number {
     font-weight: 700;
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: -0.02em;
-
+    color: #fff;
     margin-bottom: 8px;
   }
   .leave-an-application__image-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #ffffffb2;
+    color: rgba(255, 255, 255, 0.7);
   }
 }
 
