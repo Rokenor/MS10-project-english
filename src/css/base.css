@@ -30,6 +30,17 @@ body {
 }
 
 section {
-  scroll-margin-top: 72px;
+  scroll-margin-top: 20px;
 }
 
+@media (min-width: 768px) {
+  section {
+    scroll-margin-top: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  section {
+    scroll-margin-top: 50px;
+  }
+}

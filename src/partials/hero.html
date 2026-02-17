@@ -1,12 +1,67 @@
 <section class="hero-section">
+  <!-- Background image (WebP + retina + breakpoints + PNG fallback) -->
+  <picture class="hero-bg" aria-hidden="true">
+    <!-- Desktop -->
+    <source
+      media="(min-width: 1280px)"
+      type="image/webp"
+      srcset="
+        ./img/hero/hero-desktop.webp 1x,
+        ./img/hero/hero-desktop@2x.webp 2x
+      "
+    />
+    <source
+      media="(min-width: 1280px)"
+      srcset="
+        ./img/hero/hero-desktop.png 1x,
+        ./img/hero/hero-desktop@2x.png 2x
+      "
+    />
+
+    <!-- Tablet -->
+    <source
+      media="(min-width: 768px)"
+      type="image/webp"
+      srcset="
+        ./img/hero/hero-tablet.webp 1x,
+        ./img/hero/hero-tablet@2x.webp 2x
+      "
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./img/hero/hero-tablet.png 1x,
+        ./img/hero/hero-tablet@2x.png 2x
+      "
+    />
+
+    <!-- Mobile -->
+    <source
+      type="image/webp"
+      srcset="
+        ./img/hero/hero-mobile.webp 1x,
+        ./img/hero/hero-mobile@2x.webp 2x
+      "
+    />
+    <img
+      src="./img/hero/hero-mobile.png"
+      srcset="./img/hero/hero-mobile@2x.png 2x"
+      alt="Hero background image"
+    />
+  </picture>
+
   <div class="container hero-container">
     <h1 class="hero-title">
       Discover the joy of learning
       <span class="hero-title-accent">English</span> with us!
     </h1>
-    <a href="#application" class="hero-button" aria-label="Leave an application">Leave an application</a>
+
+    <a href="#application" class="hero-button" aria-label="Leave an application">
+      Leave an application
+    </a>
+
     <a href="#contact" class="hero-link" aria-label="Scroll down to contact section">
-      <svg width="20px" height="20px">
+      <svg width="20" height="20">
         <use href="./img/sprite.svg#icon-arrow-down"></use>
       </svg>
     </a>

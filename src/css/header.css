@@ -26,7 +26,7 @@
     padding-top: 20px;
     position: sticky;
     top: 0;
-    background: white;
+    background: var(--white);
     z-index: 10000;
   }
 
